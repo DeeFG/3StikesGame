@@ -5,6 +5,10 @@ let doorImage3 = document.getElementById('door3');
 beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
 spaceDoorPath="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
+let numClosedDoors = 3 ;
+let chorDoor = Math.floor(Math.random() * numClosedDoors) ;
+
+
 
 
 door1.onclick = () => {
@@ -21,3 +25,7 @@ door2.onclick = () => {
 door3.onclick = () => {
   doorImage3.src = spaceDoorPath; 
 }
+
+const randomChoreGenerator = () => {
+  
+};
